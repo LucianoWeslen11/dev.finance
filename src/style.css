@@ -1,6 +1,10 @@
 /* GLOBAL */
 :root {
   --dark-blue: #363f5f;
+  --dark-green: #2d4a22;
+  --green: #49aa26;
+  --light-green: #3dd705;
+  --red: #e92929;
 }
 
 * {
@@ -44,12 +48,13 @@ h2 {
 
 /*LINKS AND BUTTONS*/
 a {
-  color: #49aa26;
+  color: var(--green);
   text-decoration: none;
 }
 
 a:hover {
-  color: #3dd705;
+  color: var(--light-green);
+  transition: 0.2s;
 }
 
 a.button.new {
@@ -57,9 +62,43 @@ a.button.new {
   margin-bottom: 0.8rem;
 }
 
+a.button.cancel {
+  height: 50px;
+  color: var(--red);
+
+  border: 2px solid var(--red);
+  border-radius: 0.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a.button.cancel:hover {
+  opacity: 0.5;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  color: #fff;
+
+  background-color: var(--green);
+
+  padding: 0;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: var(--light-green);
+}
+
 /* HEADER */
 header {
-  background: #2d4a22;
+  background: var(--dark-green);
   padding: 2rem 0 10rem;
   text-align: center;
 }
@@ -104,7 +143,7 @@ header {
 }
 
 .card.total {
-  background: #49aa26;
+  background: var(--green);
   color: #fff;
 }
 
@@ -159,6 +198,78 @@ td.incoma {
 }
 td.expense {
   color: #e92929;
+}
+
+/* MODAL */
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.7);
+
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  background: #f0f2f5;
+  padding: 2.4rem;
+  width: 90%;
+  max-width: 500px;
+}
+
+/* FORM */
+#form {
+  max-width: 500px;
+}
+
+#form h2 {
+  margin-top: 0;
+}
+
+input {
+  border: none;
+  border-radius: 0.2rem;
+
+  padding: 0.8rem;
+
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+.input-group,
+.button-group {
+  margin-top: 0.8rem;
+}
+
+.input-group small {
+  opacity: 0.4;
+}
+
+.button-group.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-group.actions a,
+.button-group.actions button {
+  width: 48%;
 }
 
 /* FOOTER */
