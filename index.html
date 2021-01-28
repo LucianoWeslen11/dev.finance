@@ -8,11 +8,11 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./app/styles/style.css">
   </head>
   <body>
     <header>
-      <img src="./assets/logo.svg" alt="Logo Dev Finance">
+      <img src="./app/assets/logo.svg" alt="Logo Dev Finance">
     </header>
 
     <main class="container">
@@ -22,7 +22,7 @@
         <div class="card">
           <h3>
             <span>Entradas</span>
-            <img src="./assets/income.svg" alt="Imagem de Entradas">
+            <img src="./app/assets/income.svg" alt="Imagem de Entradas">
           </h3>
           <p>R$ 5.000,00</p>
         </div>
@@ -30,7 +30,7 @@
         <div class="card">
           <h3>
             <span>Saídas</span>
-            <img src="./assets/expense.svg" alt="Imagem de Saídas">
+            <img src="./app/assets/expense.svg" alt="Imagem de Saídas">
           </h3>
           <p>R$ 2.000,00</p>
         </div>
@@ -38,7 +38,7 @@
         <div class="card total">
           <h3>
             <span>Total</span>
-            <img src="./assets/total.svg" alt="Imagem de Total">
+            <img src="./app/assets/total.svg" alt="Imagem de Total">
           </h3>
           <p>R$ 3.000,00</p>
         </div>
@@ -69,19 +69,19 @@
               <td class="description">Luz</td>
               <td class="expense">- R$ 500,00</td>
               <td class="date">23/01/2021</td>
-              <td><img src="./assets/minus.svg" alt="Reomver Transação"></td>
+              <td><img src="./app/assets/minus.svg" alt="Reomver Transação"></td>
             </tr>
             <tr>
               <td class="description">Criação de Websites</td>
               <td class="incoma">R$ 5000,00</td>
               <td class="date">23/01/2021</td>
-              <td><img src="./assets/minus.svg" alt="Reomver Transação"></td>
+              <td><img src="./app/assets/minus.svg" alt="Reomver Transação"></td>
             </tr>
             <tr>
               <td class="description">Aluguel</td>
               <td class="expense">- R$ 500,00</td>
               <td class="date">23/01/2021</td>
-              <td><img src="./assets/minus.svg" alt="Reomver Transação"></td>
+              <td><img src="./app/assets/minus.svg" alt="Reomver Transação"></td>
             </tr>
           </tbody>
         </table>
@@ -136,23 +136,6 @@
       <p>dev.finace$</p>
     </footer>
 
-    <script>
-      
-      const modal = {
-        open(){
-          document
-            .querySelector(".modal-overlay")
-            .classList
-            .add("active")
-        },
-        close(){
-          document
-            .querySelector(".modal-overlay")
-            .classList
-            .remove("active")
-        }
-      }
-
-    </script>
+    <script src="./app/js/OpenModal.js"></script>
   </body>
 </html>
