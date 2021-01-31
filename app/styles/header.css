@@ -1,0 +1,21 @@
+/* HEADER */
+header {
+  background: var(--dark-green);
+  padding: 2rem 0 10rem;
+  text-align: center;
+}
+
+#logo {
+  color: #fff;
+  font-weight: 100;
+}
+
+/* BALANCE */
+#balance {
+  margin-top: -8rem;
+}
+
+#balance h2 {
+  color: #fff;
+  margin-top: 0;
+}

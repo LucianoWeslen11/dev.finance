@@ -8,7 +8,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./app/styles/style.css">
+    <link rel="stylesheet" href="./app/styles/index.css">
   </head>
   <body>
     <header>
@@ -24,7 +24,7 @@
             <span>Entradas</span>
             <img src="./app/assets/income.svg" alt="Imagem de Entradas">
           </h3>
-          <p>R$ 5.000,00</p>
+          <p id="incomeDisplay">R$ 5.000,00</p>
         </div>
 
         <div class="card">
@@ -32,7 +32,7 @@
             <span>Saídas</span>
             <img src="./app/assets/expense.svg" alt="Imagem de Saídas">
           </h3>
-          <p>R$ 2.000,00</p>
+          <p id="expenseDisplay">R$ 2.000,00</p>
         </div>
 
         <div class="card total">
@@ -40,7 +40,7 @@
             <span>Total</span>
             <img src="./app/assets/total.svg" alt="Imagem de Total">
           </h3>
-          <p>R$ 3.000,00</p>
+          <p id="totalDisplay">R$ 3.000,00</p>
         </div>
       </section>
 
@@ -50,7 +50,7 @@
         <a 
           href="#" 
           class="button new"
-          onClick="modal.open()"
+          onClick="Modal.open()"
         >
           + Nova Transação
         </a>
@@ -65,24 +65,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td class="description">Luz</td>
-              <td class="expense">- R$ 500,00</td>
-              <td class="date">23/01/2021</td>
-              <td><img src="./app/assets/minus.svg" alt="Reomver Transação"></td>
-            </tr>
-            <tr>
-              <td class="description">Criação de Websites</td>
-              <td class="incoma">R$ 5000,00</td>
-              <td class="date">23/01/2021</td>
-              <td><img src="./app/assets/minus.svg" alt="Reomver Transação"></td>
-            </tr>
-            <tr>
-              <td class="description">Aluguel</td>
-              <td class="expense">- R$ 500,00</td>
-              <td class="date">23/01/2021</td>
-              <td><img src="./app/assets/minus.svg" alt="Reomver Transação"></td>
-            </tr>
+            
           </tbody>
         </table>
       </section>
@@ -92,7 +75,7 @@
       <div class="modal">
         <div id="form">
           <h2>Nova Transação</h2>
-          <form action="">
+          <form action="" onSubmit="Form.submit(event)">
             <div class="input-group">
               <label class="sr-only" for="description">Descrição</label>
               <input 
@@ -124,7 +107,7 @@
               >
             </div>
             <div class="button-group actions">
-              <a href="#" class="button cancel" onClick="modal.close()">Cancelar</a>
+              <a href="#" class="button cancel" onClick="Modal.close()">Cancelar</a>
               <button type="submit">Salvar</button>
             </div>
           </form>
@@ -136,6 +119,7 @@
       <p>dev.finace$</p>
     </footer>
 
-    <script src="./app/js/OpenModal.js"></script>
+    <script src="./app/js/openModal.js"></script>
+    <script src="./app/js/script.js"></script>
   </body>
 </html>

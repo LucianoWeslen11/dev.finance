@@ -1,0 +1,81 @@
+/* CARDS */
+.card {
+  margin-bottom: 2rem;
+  padding: 1.5rem 2rem;
+  background: #fff;
+  border-radius: 0.25rem;
+  color: var(--dark-blue);
+}
+
+.card h3 {
+  font-weight: 400;
+  font-size: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card p {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-top: 1rem;
+}
+
+.card.total {
+  background: var(--green);
+  color: #fff;
+}
+
+/* TRANSACTION */
+#transaction {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+#data-table {
+  width: 100%;
+  border-spacing: 0 0.5rem;
+  color: var(--dark-blue);
+}
+
+#data-table thead tr td:first-child,
+#data-table thead tr th:first-child {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+#data-table thead tr td:last-child,
+#data-table thead tr th:last-child {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+#data-table tbody tr {
+  opacity: 0.7;
+}
+
+#data-table tbody tr:hover {
+  opacity: 1;
+}
+
+#data-table thead th {
+  background: #fff;
+  font-weight: 400;
+  padding: 1rem 2rem;
+  text-align: left;
+}
+
+#data-table tbody td {
+  background: #fff;
+  padding: 1rem 2rem;
+}
+
+td.description {
+  color: var(--dark-blue);
+}
+td.incoma {
+  color: #12a453;
+}
+td.expense {
+  color: #e92929;
+}
