@@ -22,9 +22,9 @@ Aplicação criada o evento **Maratona Discover** na sua 1° edição, oferecido
 
 ## 🚀 Overview
 
-<!-- <div align="center">
-  <img src=".github/assets/overview.png" alt="Frontend" />
-</div> -->
+<div align="center">
+  <img src=".github/assets/overview.png" alt="Overview" />
+</div>
 
 ## 🛠️ Techs
 

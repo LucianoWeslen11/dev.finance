@@ -19,6 +19,7 @@
 .modal-overlay.active {
   opacity: 1;
   visibility: visible;
+  z-index: 2;
 }
 
 .modal {
